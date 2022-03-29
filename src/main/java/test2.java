@@ -62,7 +62,7 @@ public class test2 {
         for (int i = 0; i < picked.length; i++) {
             Random = (int) (Math.random() * 5);
 
-            while (num[i][Random].name == "NULL") {
+            while (num[i][Random].name == "NULL"&&!num[i][Random].used) {
                 Random = (int) (Math.random() * 5);
             }
 
