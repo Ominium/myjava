@@ -2,41 +2,37 @@ import java.util.Scanner;
 
 public class test4 {
     public static void main(String[] args) {
-        int a = 0;
-        int count = 0;
-        Scanner scanner;
-        scanner = new Scanner(System.in);
-        a = scanner.nextInt();
-        for (int i = 1; i <= a; i=i+2) {
-
-            for(int j = a/2; j-count>0; j--){
-                System.out.printf(" ");
+        Scanner scanner = new Scanner(System.in);
+        int num = 0;
+        num = scanner.nextInt();
+        boolean three = true;
+        for(int i= num; i <= 1; i=i/3){
+            if(num % 3 != 0){
+                System.out.printf("입력 실패");
+                three = false;
             }
-            for(int j = 0; j<i; j++){
-                System.out.printf("*");
-            }
-            for(int j = a/2; j-count>0; j--){
-                System.out.printf(" ");
-            }
-            count++;
-            System.out.printf("\n");
         }
-        count = a/2 - 1;
+        if(three){
+            for(int i= 0; i <num; i++){
+                for(int j = 0; j<num; j++){
+                    if(j == 0 || j == num -1|| i == 0 || i == num -1) {
+                        System.out.printf("*");
 
-        for (int i = a -2; i >= 1; i=i-2) {
 
-            for(int j = a/2; j-count>0; j--){
-                System.out.printf(" ");
+                    }
+                    else System.out.printf(" ");
+                }
+                System.out.printf("\n");
             }
-            for(int j = 0; j<i; j++){
-                System.out.printf("*");
-            }
-            for(int j = a/2; j- count>0; j--){
-                System.out.printf(" ");
-            }
-            count--;
-            System.out.printf("\n");
+
+
+
+
+
+
         }
+
+
 
     }
 }
