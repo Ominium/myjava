@@ -2,7 +2,7 @@
 
 import java.util.Map.Entry;
 import java.util.*;
-public class Hello2 {
+public class Hash03 {
     public static void main(String[] args){
         String[][] clothes = new String[5][2];
         HashMap<String,Integer> pmap =new HashMap<>();
