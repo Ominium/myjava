@@ -35,6 +35,7 @@ public class KAKAOnum1 {
         for(int a : result){
             System.out.println(a);
         }
+         String a =  report[0].split("\"")[2];
     }
 }
 
